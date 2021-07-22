@@ -1,0 +1,29 @@
+Name:
+Date:
+
+1 - What are the comparison operators and how do they work?
+
+
+2 - What is the name of the type that has the values True and False?
+
+
+3 - How do we make decisions within a program?
+
+
+4 - If the condition of an if Statement evaluates to True, what happens?
+
+
+5 - If the condition of an if Statement evaluates to False, what happens?
+
+
+6 - What is an else Statement?
+
+
+7 - Do else Statements have a condition?
+
+
+8 - Do elif Statements have a condition?
+
+
+9 - Can you write code in between an if - elif - else tree?
+
