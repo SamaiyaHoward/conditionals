@@ -1,29 +1,29 @@
-Name:
-Date:
+Name: Samaiya Howard
+Date: july 22, 2021
 
 1 - What are the comparison operators and how do they work?
-
+==, this compareson operator checks if boths of the values in the condition is equal. !=, this compareson opperator checks if boths of the values in the condition are not equal. <, this compareson operator checks if the value is less than value 2. >, this compareson operator checks if the value is greater than value 2. <=, this compareson operator checks if the value is less than or equal to value 2. >=, this compareson operator checks if the value is greater than or equal to value 2.
 
 2 - What is the name of the type that has the values True and False?
-
+Boolean type data 
 
 3 - How do we make decisions within a program?
-
+We use if statements.
 
 4 - If the condition of an if Statement evaluates to True, what happens?
-
+The program would run the if statement and print out what you put in the if statement.
 
 5 - If the condition of an if Statement evaluates to False, what happens?
-
+All of the program in the statement would be ignored and it would go to the next elif or else statement.
 
 6 - What is an else Statement?
-
+An else statement is a secondary statement that prints or returns a value if the previous statements are false. 
 
 7 - Do else Statements have a condition?
-
+No
 
 8 - Do elif Statements have a condition?
-
+Yes
 
 9 - Can you write code in between an if - elif - else tree?
-
+No

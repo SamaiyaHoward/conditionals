@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Samaiya Howard
+# date: july 22,2021
 
 # --------------- # Section 2 # --------------- #
 # ---------- # Part 1 # ---------- #
@@ -21,8 +21,12 @@ print('\n' + 'Task 1' + '\n')
 #   b. Determine if the word is a palindrome.
 #       a. If so, print that the word is a palindrome.
 #       b. Otherwise, print that the word is not a palindrome.
-
-
+userInput = input('Enter a word:  ')
+text = userInput[::-1]
+if userInput == text:
+    print('This word is a palindrome.')
+else:
+    print('This word is not a palindrome.')
 # 2 - for Loop Patterns
 print('\n' + 'Task 2' + '\n')
 #
@@ -52,36 +56,77 @@ for i in range(7):
 
 print()
 
-# ****
-# *   *
-# *   *
-# *   *
-# *   *
-# *   *
-# ****
+# ****   | i = 0
+# *   *  | i = 1
+# *   *  | i = 2
+# *   *  | i = 3
+# *   *  | i = 4
+# *   *  | i = 5
+# ****   | i = 6
 
 
-# &
-# &
-# &
-# &
-# &
-# &&&&&
+# &      | i = 0
+# &      | i = 1
+# &      | i = 2
+# &      | i = 3
+# &      | i = 4
+# &&&&&  | i = 5
 
 
-# @   @
-# @   @
-#  @ @
-#   @
-#  @ @
-# @   @
-# @   @
+# @   @ | i = 0
+# @   @ | i = 1
+#  @ @  | i = 2
+#   @   | i = 3
+#  @ @  | i = 4
+# @   @ | i = 5
+# @   @ | i = 6
 
 
-# -------
-#      -
-#     -
-#    -
-#   -
-#  -
-# -------
+# ------- | i = 0
+#      -  | i = 1
+#     -   | i = 2
+#    -    | i = 3
+#   -     | i = 4
+#  -      | i = 5
+# ------- | i = 6
+
+symbol = input('Symbol >> ')
+for i in range(7):
+    if i % 6 == 0:
+        print(symbol * 4)
+    else:
+        print(symbol, ' ' * 2, symbol)
+print()
+
+symbols = input('Symbol >> ')
+for i in range(6):
+    if i == 5:
+        print(symbols * 5)
+    else:
+        print(symbols)
+print()
+
+sym = input('Symbol >> ')
+for i in range(7):
+    if i == 0 or i == 1 or i == 5 or i == 6:
+        print(sym, ' ' , sym)
+    elif i == 2 or i == 4:
+        print('', sym, sym)
+    else:
+        print(' ', sym, ' ')
+print()
+
+symbolZ = input('Symbol >> ')
+for i in range(7):
+    if i % 6 == 0:
+        print(symbolZ * 7)
+    elif i == 1:
+        print(' '* 4, symbolZ)
+    elif i == 2:
+        print(' '* 3, symbolZ)
+    elif i == 3:
+        print(' '* 2, symbolZ)
+    elif i == 4:
+        print(' '* 1, symbolZ)
+    elif i == 5:
+        print("",symbolZ)

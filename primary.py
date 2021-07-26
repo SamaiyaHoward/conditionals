@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Samaiya Howard
+# date: July 22, 2021
 
 from random import randint
 
@@ -29,11 +29,18 @@ print('\n' + 'Task 1' + '\n')
 #
 # WRITE CODE BELOW #
 a = float(input('a = '))
-b =
-c =
-d =
+b = float(input('b = '))
+c = float(input('c = '))
+d = float(input('d = '))
 
 print('a == b |', a == b)
+print('a == b == c |', a == b == c)
+print('a > b > c |', a > b > c)
+print('a < b < c < d |', a < b < c < d)
+print('a != b == c != d', a != b == c != d)
+print('a >= b >= c == d', a >= b >= c == d)
+print('a <= b > c <= d', a <= b > c <= d)
+
 
 # 2 - if Statements (ONLY USE if STATEMENTS)
 print('\n' + 'Task 2' + '\n')
@@ -54,10 +61,16 @@ print('\n' + 'Task 2' + '\n')
 #
 # WRITE CODE BELOW #
 word1 = input('enter a word: ')
-word2 =
+word2 = input('enter a word: ')
 
 if word1 == word2:
     print(word1, 'and', word2, 'are the same!')
+if word1 != word2:
+    print(word1, 'and', word2, 'are not the same!')
+if word1 < word2: 
+    print(word1, 'is less than', word2)
+if word1 > word2:
+    print(word1, 'is greater than', word2)
 
 
 # 3 - if-elif-else Statements
@@ -78,7 +91,18 @@ print('\n' + 'Task 3' + '\n')
 #       5. Otherwise, print 'Lose!'
 #
 # WRITE CODE BELOW #
-
-
-
-
+dice1 = randint(1,6)
+dice2 = randint(1,6)
+dice_sum = dice1 + dice2 
+if dice1 == dice2:
+    print('Doubles!', dice1, dice2)
+elif dice1 == dice2 == 1:
+    print('Snake Eyes!')
+elif dice1 % 2 == 0 == dice2 % 2 == 0:
+    print('Evens!', dice1, dice2)
+elif dice1 % 2 == 1 == dice2 % 2 == 1:
+    print('Odds!', dice1, dice2)
+elif dice_sum > 6:
+    print('Win!')
+else:
+    print('Lose')

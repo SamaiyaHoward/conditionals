@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Samaiya Howard
+# date: 7/23/2021
 
 # --------------- # Section 3 # --------------- #
 # ---------- # Part 1 # ---------- #
@@ -24,7 +24,47 @@ print('--- Part 1 ---'.center(25))
 #   and informed the user if they are warmer or colder.
 #
 # WRITE CODE BELOW #
+from random import randint #get the random number imported.
+random_num = randint(1,100) #setting the random number between 1 and 100
 
+print(random_num)
+print('This guessing game is between 1-100!')
+last_guess = None
+
+for i in range(10):
+    print('you have', 10 - i, 'guessed left.')
+    guess = int(input("Enter a number: "))
+
+    if i == 0:
+        if guess != random_num:
+            print('Your wrong')
+        else:
+            print('Correct!')
+            break
+
+    else:
+        if guess == random_num:
+            print('Correct! You guess the correct number! You have', 10 - i, 'guesses left! You did it in',i, 'guesses!')
+            break
+        elif abs(guess - random_num) < abs(last_guess - random_num):
+            print('Warmer')
+        elif abs(guess - random_num) > abs(last_guess - random_num):
+            print('Colder')
+        elif abs(guess - random_num) == abs(last_guess - random_num):
+            print('No change')
+
+
+    
+    last_guess = guess 
+
+if guess != random_num:
+    print('Game over you guessed the number incorrectly the number was:', random_num)
+
+# Getting Warmer --> The difference between the current guess and the secret is LESS THAN
+#                       the difference between the last guess and the secret.
+
+# Getting Colder --> The difference between the current guess and the secret is GREATER THAN
+#                       the difference between the last guess and the secret.
 
 # ---------- # Part 2 # ---------- #
 print('\n' + ('--- Part 2 ---'.center(25)) + '\n')
@@ -64,4 +104,15 @@ print('\n' + ('--- Part 2 ---'.center(25)) + '\n')
 #       the beginning.
 #
 # WRITE CODE BELOW #
+dna_input = input('enter a DNA sequence: ')
+dna = input('enter a DNA sequence: ')
 
+
+def hamming(dna_input, dna):
+    difference = 0
+    for i in range(len(dna)):
+        if dna_input[i] != dna[i]:
+            difference += 1
+        
+    print('hamming distance =',difference)
+hamming(dna_input, dna)
